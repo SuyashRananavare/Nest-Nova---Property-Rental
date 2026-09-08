@@ -22,5 +22,403 @@
             <a href="login.html" class="login-btn">Login</a>
         </div>
     </nav>
+
+     <header class="page-header">
+        <h1>Explore All <span>Properties</span></h1>
+        <p>Discover handpicked apartments, luxury villas, and family homes.</p>
+    </header>
+
+    <section class="features-properties">
+        <div class="section-header">
+            <h2>Available <span>Listings</span></h2>
+            <p>Browse through our latest property listings below.</p>
+        </div>
+
+        <div class="filter-buttons">
+
+            <button onclick="filterProperties('all')">All</button>
+
+            <button onclick="filterProperties('apartment')">Apartments</button>
+
+            <button onclick="filterProperties('villa')">Villas</button>
+
+            <button onclick="filterProperties('house')">Houses</button>
+
+        </div>
+
+        <div class="properties-grid">
+
+            <div class="property-card" data-category="villa">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/premium-photo/beautiful-luxury-beach-front-villa-with-outdoor-pool-sunset_954932-2386.jpg"
+                        alt="Modern Villa">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.44,50,000</span>
+                    <h3>Skyline Modern Villa</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Goa</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 2,100 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card"  data-category="villa">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/736x/49/ec/93/49ec9312a8a21f5f19928e37f10f8fb1.jpg"
+                        alt="Modern Villa">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.43,95,000</span>
+                    <h3>Palm Horizon Villa</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Alibaug</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 2 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 1,500 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card"  data-category="villa">
+                <div class="card-image">
+                    <img src="https://bookingsforyou.com/blog/images/2020/06/DJI_0259.jpg" alt="Modern Villa">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.54,50,000</span>
+                    <h3>Sunset Paradise Villa</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Lonavala</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 2,500 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- Property 1: Mumbai -->
+            <div class="property-card"  data-category="apartment">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+                        alt="Skyline Luxury Apartment">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.2,50,00,000</span>
+                    <h3 style="margin-top: 10px;">Skyline Luxury Apartment</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Bandra, Mumbai</p>
+                    <div class="property-data">
+                        <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-landmark"></i> 1,650 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- Property 2: Pune -->
+            <div class="property-card"  data-category="house">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+                        alt="Greenfield Modern Residence">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.85,00,000</span>
+                    <h3 style="margin-top: 10px;">Greenfield Modern Residence</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Baner, Pune</p>
+                    <div class="property-data">
+                        <span><i class="fa-solid fa-bed"></i> 2 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span><i class="fa-solid fa-landmark"></i> 1,150 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- Property 3: Alibaug -->
+            <div class="property-card"  data-category="villa">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80"
+                        alt="Ocean Breeze Villa">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.1,80,00,000</span>
+                    <h3 style="margin-top: 10px;">Ocean Breeze Beach Villa</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Alibaug</p>
+                    <div class="property-data">
+                        <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 4 Baths</span>
+                        <span><i class="fa-solid fa-landmark"></i> 3,200 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- Property 4: Nashik -->
+            <div class="property-card"  data-category="house">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                        alt="Vineyard View Estate">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.62,00,000</span>
+                    <h3 style="margin-top: 10px;">Vineyard View Row House</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Gangapur Road, Nashik</p>
+                    <div class="property-data">
+                        <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-landmark"></i> 1,800 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- Property 5: Nagpur -->
+            <div class="property-card"  data-category="house">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+                        alt="Royal Palms Heights">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.55,00,000</span>
+                    <h3 style="margin-top: 10px;">Royal Palms Heights</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Besa, Nagpur</p>
+                    <div class="property-data">
+                        <span><i class="fa-solid fa-bed"></i> 2 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span><i class="fa-solid fa-landmark"></i> 1,050 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- Property 6: Thane -->
+            <div class="property-card"  data-category="house">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=800&q=80"
+                        alt="Lakeside Smart Residency">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.1,20,00,000</span>
+                    <h3 style="margin-top: 10px;">Lakeside Smart Residency</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Ghodbunder Rd, Thane</p>
+                    <div class="property-data">
+                        <span><i class="fa-solid fa-bed"></i> 2 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span><i class="fa-solid fa-landmark"></i> 1,250 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- 1. MUMBAI - Apartment -->
+            <div class="property-card"  data-category="apartment">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+                        alt="Modern Apartment">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.2,50,00,000</span>
+                    <h3>Skyline Luxury Apartment</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Bandra, Mumbai</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 1,650 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- 2. MUMBAI - Luxury Villa -->
+            <div class="property-card"  data-category="villa">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80"
+                        alt="Luxury Villa">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.4,80,00,000</span>
+                    <h3>Seaface Palms Villa</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Juhu, Mumbai</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 4 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 3,400 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- 3. PUNE - Family House -->
+            <div class="property-card"  data-category="house">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+                        alt="Family House">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.85,00,000</span>
+                    <h3>Greenfield Modern Residence</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Baner, Pune</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 2 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 1,150 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- 4. PUNE - Apartment -->
+            <div class="property-card"  data-category="apartment">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=800&q=80"
+                        alt="Modern Apartment">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.68,00,000</span>
+                    <h3>IT Park Residency</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Hinjewadi, Pune</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 2 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 1,020 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- 5. NASHIK - Family House -->
+            <div class="property-card"  data-category="house">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                        alt="Row House">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.62,00,000</span>
+                    <h3>Vineyard View Row House</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Gangapur Road, Nashik</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 1,800 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- 6. NASHIK - Luxury Villa -->
+            <div class="property-card"  data-category="villa">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80"
+                        alt="Luxury Villa">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.1,15,00,000</span>
+                    <h3>Sula Horizon Villa</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Govind Nagar, Nashik</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 4 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 2,800 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- 7. NAGPUR - Apartment -->
+            <div class="property-card"  data-category="apartment">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+                        alt="Apartment">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.55,00,000</span>
+                    <h3>Royal Palms Heights</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Besa, Nagpur</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 2 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 1,050 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+
+            <!-- 8. NAGPUR - Family House -->
+            <div class="property-card"  data-category="house">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+                        alt="Family House">
+                    <button class="fav-btn">🤍</button>
+                </div>
+                <div class="card-content">
+                    <span class="price">Rs.48,00,000</span>
+                    <h3>Orange City Meadows</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>Wardha Road, Nagpur</p>
+                    <div class="property-data">
+                        <span> <i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span> <i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span> <i class="fa-solid fa-landmark"></i> 1,400 sqft</span>
+                    </div>
+                    <a href="property-detail.html" class="btn-details">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">Nest<span>Nova</span></a>
+                <p>Your trusted smart property finder. Discover verified apartments, luxury villas, and family homes
+                    with zero hassle.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Login / Register</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📍 Unit 402, Business Bay, Golf Course Road, Koregaon Park Annexe, Pune, Maharashtra 411006</p>
+                <p>📞 +91 20 4123 8900</p>
+                <p>✉️ support@nestnova.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
